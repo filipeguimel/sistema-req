@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+    postgres:
+        container_name: gfgc-selecao-viitra-db
+        image: postgres
+        ports:
+            - 5432:5432
+        env_file:
+            - .env
+        environment:
+            - POSTGRES_USER=${DATABASE_USER}
+            - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+            - DATABASE_URL=${DATABASE_URL}
+        volumes:
+            - pgdata:/var/lib/postgresql/data
+
+    test-postgres:
+        container_name: gfgc-selecao-viitra-db-test
+        image: postgres
+        ports:
+            - 5433:5432
+        env_file:
+            - .env
+        environment:
+            - POSTGRES_USER=${DATABASE_TEST_USER}
+            - POSTGRES_PASSWORD=${DATABASE_TEST_PASSWORD}
+            - DATABASE_URL=${DATABASE_TEST_URL}
+
+volumes:
+    pgdata:
+    node_modules:
