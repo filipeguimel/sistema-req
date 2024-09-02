@@ -7,18 +7,11 @@ Está sendo utilizada a versão 18.16 do Node.js.
 
 ## Índice
 
-- [Modelo Entidade-Relacionamento](#modelo-entidade-relacionamento)
 - [Como rodar](#como-rodar)
 - [Tecnologias e frameworks utilizados](#tecnologias-e-frameworks-utilizados)
     - [Back-End](#back-end)
     - [Front-End](#front-end)
 
-## Modelo Entidade-Relacionamento
-
-Você pode conferir o Modelo Entidade-Relacionamento de 2 formas:
-
-- [Por este link, para acessar a imagem](https://drive.google.com/file/d/18W20oareTPbzAXGiwcM_gQ6nsKJvGIor/view?usp=sharing), ou
-- Acessando a pasta `/api/prisma/dbml`, copie o conteúdo do arquivo `schema.dbml` e cole no site [dbdiagram.io](https://dbdiagram.io/d).
 
 ## Como rodar
 
